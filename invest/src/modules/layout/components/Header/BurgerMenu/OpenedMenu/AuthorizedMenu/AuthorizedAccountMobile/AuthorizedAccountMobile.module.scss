@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+.username {
+  margin-top: 8px;
+  font-family: var(--text-font-family-secondary);
+  font-size: var(--text-font-size-body4);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--color-text-dark);
+}

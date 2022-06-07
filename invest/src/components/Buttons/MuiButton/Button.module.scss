@@ -1,0 +1,118 @@
+.root {
+  position: relative;
+  height: 32px;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-family: var(--text-font-family-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--color-headings);
+  text-transform: initial;
+  letter-spacing: 0;
+
+  cursor: pointer;
+  background: var(--color-primary-gradient);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+
+  &:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 40px;
+    content: '';
+  }
+
+  &:disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+  }
+  &:hover {
+    @media (hover) {
+      background: var(--color-primary-hover-gradient);
+      box-shadow: none;
+    }
+  }
+}
+
+.sizeLarge {
+  height: 40px;
+  font-size: 16px;
+}
+
+.outlined {
+  color: var(--color-headings);
+  background: var(--color-primary-opacity);
+  border: 1px solid var(--color-primary);
+  &:hover {
+    @media (hover) {
+      background: var(--color-primary-opacity-030);
+    }
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.outlinedPrimary2 {
+  color: var(--color-primary);
+  background: var(--color-primary-opacity);
+  border: 1px solid var(--color-primary);
+  &:hover {
+    @media (hover) {
+      color: var(--color-headings);
+      background: var(--color-primary);
+    }
+  }
+}
+
+.outlinedSecondary {
+  color: var(--color-secondary);
+  background: var(--color-secondary-opacity-005);
+  border: 1px solid var(--color-secondary);
+  &:hover {
+    color: var(--color-headings);
+    background: var(--color-secondary-opacity-20);
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.outlinedSecondaryDanger{
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+  background: var(--color-error-opacity-005);
+  &:hover {
+    background: var(--color-error-opacity-020);
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.containedSecondary {
+  color: #ffffff;
+  background: var(--color-secondary-gradient);
+  border: 0;
+  &:hover {
+    color: #fff;
+    background: var(--color-secondary-hover);
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

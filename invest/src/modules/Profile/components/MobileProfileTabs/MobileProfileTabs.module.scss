@@ -1,0 +1,9 @@
+.tabs {
+  padding-top: 16px;
+  padding-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 577px) {
+    max-width: 576px;
+  }
+}

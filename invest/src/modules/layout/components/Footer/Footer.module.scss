@@ -1,0 +1,133 @@
+.container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--color-light-text);
+  background: var(--color-secondary-dark);
+  @media (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+.innerContainer {
+  display: flex;
+  @media (min-width: 768px) {
+    gap: 24px;
+  }
+}
+
+.title {
+  font-family: var(--text-font-family-secondary);
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--color-light-text);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.links {
+  margin-top: 32px;
+  span {
+    display: block;
+  }
+}
+
+.column {
+  flex-basis: 100%;
+  &:not(:last-of-type) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    &:not(:last-of-type) {
+      display: block;
+    }
+    flex-basis: calc(100% / 4 - 18px);
+  }
+}
+
+.lastColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    align-items: flex-end;
+  }
+}
+
+.copyrightContainer {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 56px;
+  }
+}
+
+.copyright {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--color-light-text);
+}
+
+.copyrightLinks {
+  display: flex;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--color-light-text);
+}
+
+.divider {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.stores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  @media (min-width: 360px) {
+    flex-direction: row;
+  }
+  @media (min-width: 768px) {
+    margin-top: 33px;
+  }
+
+  a:nth-of-type(2) {
+    margin-top: 8px;
+    @media (min-width: 360px) {
+      margin-top: 0;
+      margin-left: 8px;
+    }
+  }
+}
+
+.desktopBtn {
+  margin-top: 83px;
+  button {
+    min-width: 105px;
+  }
+}
+
+.mobileBtn {
+  button {
+    min-width: 105px;
+  }
+}
+
+.outerCopyrightContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.accordionContainer {
+  min-height: 157px;
+  margin-top: 23px;
+}

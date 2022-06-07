@@ -1,0 +1,10 @@
+.menu {
+  display: none;
+  margin-left: 32px;
+  &.authorized {
+    margin-left: 41px;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}

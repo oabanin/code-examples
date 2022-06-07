@@ -1,0 +1,13 @@
+.tooltip {
+  padding: 8px 12px;
+  margin-top: 0px !important;
+  font-family: var(--text-font-family-primary);
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+  word-break: break-word;
+  background: var(--color-secondary-dark);
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(65, 89, 106, 0.36);
+}

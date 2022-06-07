@@ -1,0 +1,49 @@
+.titleContainer {
+  padding: 0 16px;
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  padding: 0 16px;
+  margin-top: 13px;
+  button {
+    &:nth-of-type(2) {
+      margin-left: 16px;
+      @media (min-width: 768px) {
+        margin-left: 24px;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 0;
+    margin-top: 19px;
+  }
+}
+
+.form {
+  margin-top: 19px;
+  @media (min-width: 768px) {
+    margin-top: 21px;
+  }
+}
+
+.checkbox {
+  .checkBoxRoot {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 4px;
+    margin-right: 0;
+    margin-left: 0;
+    @media (min-width: 768px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 0;
+      margin-left: -8px;
+    }
+  }
+}

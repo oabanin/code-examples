@@ -1,0 +1,11 @@
+.buttons {
+  display: flex;
+  &.hide_on_mobile {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+}
+.langContainer {
+  position: relative;
+}

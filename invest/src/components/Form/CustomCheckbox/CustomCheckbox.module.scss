@@ -1,0 +1,7 @@
+.root {
+  align-items: flex-start;
+  margin-left: -12px;
+  @media (min-width: 768px) {
+    margin-left: -8px;
+  }
+}

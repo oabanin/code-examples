@@ -1,0 +1,18 @@
+.container {
+  padding: 0;
+  @media (min-width: 768px) {
+    padding: 48px 56px 56px 56px;
+  }
+  &.hide {
+    display: none;
+  }
+}
+
+.backButtonContainer {
+  @media (min-width: 577px) {
+    max-width: 576px;
+  }
+  @media (min-width: 768px) {
+    max-width: none;
+  }
+}

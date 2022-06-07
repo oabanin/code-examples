@@ -1,0 +1,29 @@
+.endAdornment {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in;
+  @media (hover) {
+    &:hover {
+      svg * {
+        fill: var(--color-headings);
+      }
+    }
+  }
+
+  &.open {
+    transition: transform 0.1s ease-in;
+    transform: rotate(180deg);
+  }
+
+  &.disabled {
+    opacity: 0.4;
+  }
+}

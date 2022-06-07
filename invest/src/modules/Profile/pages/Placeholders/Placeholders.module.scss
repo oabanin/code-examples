@@ -1,0 +1,129 @@
+.headerMenuPlaceholder {
+  &:not(:last-child) {
+    margin-right: 14.5px;
+  }
+}
+
+.headerPromoteIconPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  @media (min-width: 1024px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.CheckboxRadioButtonPlaceholderWrapper {
+  padding: 0 16px;
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.CheckboxRadioButtonPlaceholderContent {
+  display: flex;
+  align-items: center;
+  padding-right: 11px;
+  padding-left: 8px;
+}
+
+.checkboxRadioButton {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  margin-right: 20px;
+  &.experience {
+    height: 62px;
+    @media (min-width: 768px) {
+      height: 46px;
+    }
+  }
+  &.withoutHeight {
+    height: 46px !important;
+  }
+  &.riskRange {
+    height: 46px;
+  }
+  &.withHeight {
+    height: 62px;
+    @media (min-width: 768px) {
+      height: 46px;
+    }
+  }
+}
+
+.ButtonsContainerPlaceholder {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  @media (min-width: 768px) {
+    column-gap: 24px;
+  }
+}
+
+.riskRangeSelect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+  align-items: start;
+  justify-content: space-between;
+  height: 71px;
+  @media (min-width: 768px) {
+    column-gap: 24px;
+  }
+}
+
+.riskRangeButtonsPlaceholder {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accountMobileImageButtonPlaceholder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 156px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.accountMobileImageButtonWrapperLinePlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: transparent;
+  border: 1px solid #dadfe2;
+}
+
+.acccountTypePlaceholder {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  @media (min-width: 768px) {
+    height: 48px;
+  }
+}
+
+.manageAccessSocialPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding-left: 8px;
+  border-bottom: 1px solid var(--color-cards-border);
+  &.hideBorderBottom {
+    border-bottom: none;
+  }
+}

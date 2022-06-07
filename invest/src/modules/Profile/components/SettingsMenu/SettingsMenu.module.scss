@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+
+  span {
+    &:not(:first-of-type) {
+      margin-left: 25px;
+    }
+  }
+}

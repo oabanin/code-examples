@@ -1,0 +1,52 @@
+.pageContainer {
+  max-width: 360px;
+  padding: 24px 0 31px 0;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    max-width: none;
+    padding: 48px 56px 56px 56px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+.container {
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 56px;
+  }
+}
+
+.left {
+  @media (min-width: 768px) {
+    flex-basis: calc(50% - 28px);
+  }
+}
+
+.right {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    flex-basis: calc(50% - 28px);
+    padding-top: 8px;
+  }
+}
+
+.graph {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 100%;
+}

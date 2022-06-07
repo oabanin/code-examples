@@ -1,0 +1,128 @@
+.inputContainer {
+  margin-top: 7px;
+  @media (min-width: 768px) {
+    margin-top: 31px;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+
+  button {
+    min-width: 214px;
+    max-width: fit-content;
+  }
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    button {
+      min-width: 190px;
+    }
+  }
+
+  &.codeSent {
+    @media (min-width: 768px) {
+      order: 1;
+      margin-top: 20px;
+    }
+  }
+}
+
+.textAndBtnContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin-top: 4px;
+  font-size: var(--text-font-size-body3);
+  line-height: var(--text-line-height-body3);
+  color: var(--color-light-text);
+  letter-spacing: 0;
+
+  &.codeSent {
+    @media (min-width: 768px) {
+      order: 2;
+      margin-top: 24px;
+    }
+  }
+}
+
+.firstStepTitleContainer {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.codeContainer {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  max-width: 404px;
+  margin-top: 15px;
+  @media (min-width: 768px) {
+    gap: 24px;
+  }
+}
+
+.error {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  font-size: 12px;
+
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--color-error);
+}
+
+.inputCode {
+  input {
+    text-align: center;
+  }
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-light-text);
+  @media (min-width: 768px) {
+    margin-top: 24px;
+  }
+}
+
+.subtitleContainer {
+  margin-top: -4px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.formContainer {
+  padding-bottom: 12px;
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+
+  button {
+    min-width: 156px;
+    max-width: fit-content;
+  }
+
+  @media (min-width: 768px) {
+    gap: 24px;
+    button {
+      min-width: 190px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  max-width: 576px;
+  padding: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: var(--text-font-family-secondary);
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-headings);
+  letter-spacing: 0;
+  background: transparent;
+  border: 0;
+}
+
+.text {
+  padding-left: 16px;
+}
+
+.container {
+  background: var(--color-secondary-opacity-005);
+}

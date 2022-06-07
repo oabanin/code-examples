@@ -1,0 +1,21 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-family: var(--text-font-family-secondary);
+  color: var(--color-headings);
+  cursor: pointer;
+  &:not(:last-of-type) {
+    margin-right: 14.5px;
+  }
+  @media (hover) {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &.selected {
+    text-decoration: underline;
+  }
+}

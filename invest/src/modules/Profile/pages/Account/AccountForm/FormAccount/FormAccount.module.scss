@@ -1,0 +1,79 @@
+.buttonsContainer {
+  display: flex;
+  margin-top: 13px;
+  button {
+    &:nth-of-type(2) {
+      margin-left: 16px;
+      @media (min-width: 768px) {
+        margin-left: 24px;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    margin-top: 12px;
+  }
+}
+
+.firstInputContainer {
+  margin-top: 31px;
+}
+
+.inputContainer {
+  margin-top: 11px;
+}
+
+.titleContainer {
+  margin-top: 24px;
+  @media (min-width: 768px) {
+    margin-top: 3px;
+  }
+}
+
+.titleSectionContainer {
+  margin-top: 32px;
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.titleSectionContainerForm {
+  margin-top: 28px;
+  @media (min-width: 768px) {
+    margin-top: 36px;
+  }
+}
+
+.titleSectionContainerFormResidential {
+  margin-top: 18px;
+  @media (min-width: 768px) {
+    margin-top: 36px;
+  }
+}
+
+.titleSectionContainerFormPostal {
+  margin-top: 32px;
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.accountTypeContainer {
+  margin-top: 23px;
+}
+
+.borderCard {
+  height: 1px;
+  background: var(--color-cards-border);
+}
+
+.postalCode {
+  width: 47.5%;
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 190px;
+  }
+}
+
+.checkboxContainer {
+  margin-top: 6px;
+}

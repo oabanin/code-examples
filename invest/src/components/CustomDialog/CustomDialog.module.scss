@@ -1,0 +1,75 @@
+.paper {
+  max-width: 400px;
+  margin: 16px;
+}
+
+.container {
+  position: relative;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0px 8px 24px 0px #1b223a52;
+  @media (min-width: 768px) {
+    padding: 32px;
+  }
+}
+
+.title {
+  font-family: var(--text-font-family-secondary);
+  font-size: var(--text-font-size-h2-mobile);
+  line-height: var(--text-line-height-h2-mobile);
+  color: var(--color-headings);
+  @media (min-width: 768px) {
+    font-size: var(--text-font-size-h2-desktop);
+    line-height: var(--text-line-height-h2-desktop);
+  }
+}
+
+.text {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--color-text);
+  letter-spacing: 0;
+  @media (min-width: 768px) {
+    font-size: var(--text-font-size-body4);
+    line-height: var(--text-line-height-body4);
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 32px;
+  button {
+    width: calc(50% - 8px);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  @media (min-width: 768px) {
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+  }
+  @media (hover) {
+    &:hover {
+      svg * {
+        fill: var(--color-secondary);
+      }
+    }
+  }
+}

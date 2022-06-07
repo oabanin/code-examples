@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  padding: 16px 12px 32px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    max-width: none;
+    padding: 0;
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+.img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imgContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.text {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--color-light-text);
+  text-align: center;
+  letter-spacing: 0;
+  @media (min-width: 768px) {
+    margin-top: 22px;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  button {
+    min-width: 142px;
+    @media (min-width: 768px) {
+      min-width: 142px;
+    }
+    &:nth-of-type(2) {
+      margin-left: 16px;
+    }
+  }
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
+}
+
+div.cropArea {
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  padding: 0 14px;
+  margin-top: 12px;
+  @media (min-width: 768px) {
+    gap: 15px;
+    padding: 0 27px;
+    margin-top: 16px;
+  }
+}
+
+.ctrlBtn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  border: 0;
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+  @media (hover) {
+    &:hover {
+      svg * {
+        fill: var(--color-primary);
+      }
+    }
+  }
+  &:disabled {
+    pointer-events: none;
+    cursor: default;
+    svg * {
+      opacity: 0.5;
+    }
+  }
+}

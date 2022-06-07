@@ -1,0 +1,45 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+}
+
+.menu {
+  width: 100%;
+  max-width: 304px;
+  height: 100%;
+  overflow: auto;
+  background: #fff;
+  box-shadow: 4px 0px 16px 0px #41596a5c;
+}
+
+.overlay {
+  flex: 1;
+  background: var(--color-secondary-opacity-60);
+}
+
+.header {
+  padding: 16px 16px 24px 16px;
+}
+
+.buttons {
+  display: flex;
+  button {
+    width: 100%;
+    max-width: 132px;
+    margin-top: 24px;
+    &:nth-of-type(2) {
+      margin-left: 8px;
+    }
+  }
+}
+
+.divider {
+  height: 1px;
+  background: var(--color-cards-border);
+  opacity: 0.3;
+}

@@ -1,0 +1,13 @@
+.link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--color-primary);
+  text-align: center;
+  letter-spacing: 0em;
+  @media (hover) {
+    &:hover {
+      color: var(--color-primary-hover);
+    }
+  }
+}

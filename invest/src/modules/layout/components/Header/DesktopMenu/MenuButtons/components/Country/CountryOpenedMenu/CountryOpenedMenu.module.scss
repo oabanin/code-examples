@@ -1,0 +1,17 @@
+.container {
+  position: absolute;
+
+  right: 0;
+  width: 200px;
+  height: 176px;
+
+  padding: 8px 0;
+  overflow: auto;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  @media (min-width: 1024px) {
+    right: initial;
+    left: 0;
+  }
+}

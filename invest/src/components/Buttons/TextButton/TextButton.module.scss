@@ -1,0 +1,14 @@
+.button{
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 700;
+  border: 0;
+  padding:0;
+  background: none;
+  color: var(--color-secondary);
+  @media(hover ){
+    &:hover{
+      color: var(--color-headings);
+    }
+  }
+}

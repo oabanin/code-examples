@@ -1,0 +1,46 @@
+.container {
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
+
+  &:not(:first-of-type) {
+    .link {
+      padding-top: 10px;
+      @media (min-width: 768px) {
+        padding-top: 0;
+      }
+    }
+  }
+  &:last-of-type {
+    .link {
+      padding-bottom: 25px;
+      @media (min-width: 768px) {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.link {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+
+  cursor: pointer;
+  @media (min-width: 768px) {
+    padding-bottom: 0px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  @media (hover) {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+  &.active {
+    pointer-events: none;
+    cursor: default;
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 5px 13px;
+  @media (hover) {
+    &:hover {
+      cursor: pointer;
+      background: gray;
+    }
+  }
+}
+
+.text {
+  padding-left: 13px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  //padding-right: 15px;
+}

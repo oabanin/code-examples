@@ -1,0 +1,1 @@
+import { axiosInstance } from 'src/api/instance';export const logout = async () => {  const token = JSON.parse(localStorage.getItem('user'))?.session_token;  localStorage.removeItem('user');  return await axiosInstance.post(    '/auth/logout',    {},    {      headers: {        Authorization: `Bearer ${token}`,      },    },  );};

@@ -1,0 +1,19 @@
+.container {
+}
+
+.link {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--color-light-text);
+  text-decoration: underline;
+  cursor: pointer;
+  @media (hover) {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+  &.active {
+    pointer-events: none;
+    cursor: default;
+  }
+}

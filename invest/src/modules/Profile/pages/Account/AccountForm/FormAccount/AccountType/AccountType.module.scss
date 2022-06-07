@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 7px 16px;
+  color: var(--color-light-text);
+  border-bottom: 1px solid var(--color-cards-border);
+  @media (min-width: 768px) {
+    padding: 4px 4px 3px 16px;
+  }
+}
+
+.left {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  letter-spacing: 0em;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+  text-align: right;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: 8px;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  @media (hover) {
+    &:hover {
+      svg * {
+        fill: var(--color-primary);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+    margin-left: 4px;
+  }
+}

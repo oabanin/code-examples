@@ -1,0 +1,28 @@
+.track {
+  height: 6px;
+  background: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+
+.rail {
+  background: var(--color-secondary);
+}
+.thumb {
+  background: var(--color-secondary);
+  &:hover {
+    box-shadow: 0px 0px 0px 8px var(--color-secondary-opacity-24) !important;
+    &.focusVisible {
+      box-shadow: 0px 0px 0px 8px var(--color-secondary-opacity-24) !important;
+    }
+    &.active {
+      box-shadow: 0px 0px 0px 14px var(--color-secondary-opacity-24) !important;
+    }
+  }
+}
+
+.focusVisible {
+  box-shadow: 0px 0px 0px 8px var(--color-secondary-opacity-24) !important;
+}
+.active {
+  box-shadow: 0px 0px 0px 14px var(--color-secondary-opacity-24) !important;
+}

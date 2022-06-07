@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-right: -13px;
+  cursor: pointer;
+
+  background: transparent;
+  border: 0;
+  @media (min-width: 992px) {
+    margin-right: 0;
+  }
+}

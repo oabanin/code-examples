@@ -1,0 +1,1 @@
+import options from 'src/store/optionsSlice';import { configureStore } from '@reduxjs/toolkit';import user from './userSlice';export default configureStore({  reducer: {    user,    options,  },});
